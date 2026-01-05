@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int customerno;
+	float units,charge,money;
+	printf("Enter the customer number:");
+	scanf("%d",&customerno);
+	printf("Enter no.of units comsumer:");
+	scanf("%f",&units);
+	if(units>=0&&units<=200){
+		charge=0.4*units;
+		printf("%f",charge);
+	} else if(units>=201&&units<=400){
+		charge=0.5*units;
+		printf("%f",charge);
+	}
+	else if(units>=401&&units<=600){
+		charge=0.7*units;
+		printf("%f",charge);
+	}else{
+		charge=2.5*units;
+		printf("%f",charge);
+	}
+	return 0;
+}
